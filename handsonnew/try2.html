@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="try2.css">
+</head>
+<body>
+    <div class="div1">
+        <span class="b" id="bb1">1</span>
+        <span class="b" id="bb2">2</span>
+        <span class="b" id="bb3">3</span> <br>
+        <span class="b" id="bb4">4</span>
+        <span class="b" id="bb5">5</span>
+        <span class="b" id="bb6">6</span> <br>
+        <span class="b" id="bb7">7</span>
+        <span class="b" id="bb8">8</span>
+        <span class="b" id="bb9">9</span> <br>
+        <span class="b" id="bb10">10</span>
+        <span class="b" id="bb11">11</span>
+        <span class="b" id="bb12">12</span> <br><br>
+
+        <button class="even" id="btn">Even</button>
+        <button class="odd" id="btn1">Odd</button>
+        
+    </div>
+    <script>
+        let spanElement=document.getElementsByClassName("b");
+         let evenButton=document.getElementById("btn");
+         let oddButton=document.getElementById("btn1");
+         evenButton.addEventListener("click",function(){
+            for(let i=0;i<=spanElement.length;i++)
+            {
+               let  n = spanElement[i].innerText;
+               if(parseInt(n)%2==0)
+               {
+                spanElement[i].style.backgroundColor="red";
+               }
+
+            }
+         })
+         oddButton.addEventListener("click",function(){
+            for(let i=0;i<=spanElement.length;i++)
+            {
+               let  m = spanElement[i].innerText;
+               if(parseInt(m)%2==1)
+               {
+                spanElement[i].style.backgroundColor="yellow";
+               }
+
+            }
+         })
+
+         
+      
+
+    </script>
+</body>
+</html>

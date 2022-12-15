@@ -1,0 +1,29 @@
+.div1{
+    width: 200px;
+    height: 300px;
+    border: solid 2px black;
+}
+span{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px gray;
+}
+button{
+    height: 50px;
+    width: 60px;
+    margin-left: 15px;
+    justify-content: center;
+}
+.even
+{
+    background-color: aquamarine
+}
+.odd
+{
+    background-color: blueviolet;
+}
